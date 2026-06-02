@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "categorie": "Négociation — Refus poli",
+    "texte": "Bonjour ! Merci pour votre intérêt 😊 Le prix est déjà au plus bas pour cet article, je ne peux malheureusement pas faire de réduction supplémentaire. N'hésitez pas si vous avez d'autres questions !"
+  },
+  {
+    "id": "2",
+    "categorie": "Négociation — Acceptation partielle",
+    "texte": "Bonjour ! Je peux faire un petit geste et le laisser à [NOUVEAU PRIX] €, c'est vraiment mon dernier prix. Je vous laisse décider 🙂"
+  },
+  {
+    "id": "3",
+    "categorie": "Négociation — Contre-offre",
+    "texte": "Bonjour ! Merci pour votre offre. Je vous propose [PRIX] € — c'est en dessous du prix affiché mais ça me convient si vous souhaitez conclure rapidement. Dites-moi !"
+  },
+  {
+    "id": "4",
+    "categorie": "Question sur l'état",
+    "texte": "Bonjour ! L'article est en [ÉTAT], [DÉTAIL PRÉCIS ex: pas de trou ni déchirure, coutures parfaites]. Je l'ai utilisé [X FOIS / rarement / jamais]. N'hésitez pas à me demander des photos supplémentaires, je vous les envoie avec plaisir !"
+  },
+  {
+    "id": "5",
+    "categorie": "Litige — Problème à la réception",
+    "texte": "Bonjour, je suis vraiment désolé(e) d'apprendre ça. Ce n'était pas du tout mon intention. Pouvez-vous m'envoyer des photos de l'article reçu ? Je vais faire le nécessaire pour trouver une solution rapidement et vous satisfaire. Merci pour votre patience."
+  },
+  {
+    "id": "6",
+    "categorie": "Demande de photos supplémentaires",
+    "texte": "Bonjour ! Bien sûr, je vous envoie des photos supplémentaires de [DÉTAIL] dans les plus brefs délais. Y a-t-il un angle particulier ou un détail spécifique que vous souhaitez voir ?"
+  },
+  {
+    "id": "7",
+    "categorie": "Acheteur qui ne paie pas",
+    "texte": "Bonjour ! Je voulais juste m'assurer que tout allait bien de votre côté suite à votre achat. La commande est toujours en attente de paiement. Faites-moi signe si vous avez besoin d'aide ou si vous souhaitez annuler, pas de souci !"
+  },
+  {
+    "id": "8",
+    "categorie": "Relance douce",
+    "texte": "Bonjour ! Je voulais revenir vers vous au sujet de [ARTICLE]. Il est toujours disponible si vous êtes intéressé(e). Je peux faire un petit effort sur le prix si vous souhaitez conclure cette semaine 🙂"
+  },
+  {
+    "id": "9",
+    "categorie": "Remerciement après vente",
+    "texte": "Merci beaucoup pour votre achat ! J'expédie dès aujourd'hui / demain. N'hésitez pas à me laisser une évaluation une fois l'article reçu, c'est très précieux pour moi. Belle journée à vous ! 😊"
+  }
+]

@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %}Générateur SEO{% endblock %}
+{% block content %}
+<h1>✨ Générateur SEO</h1>
+
+<div class="card">
+  <form method="POST" action="/generate">
+    <div class="form-row">
+      <div class="form-group">
+        <label>Catégorie</label>
+        <select name="categorie">
+          {% for key, label in categories.items() %}
+          <option value="{{ key }}" {% if form.get('categorie') == key %}selected{% endif %}>{{ label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Marque (optionnel)</label>
+        <input type="text" name="marque" placeholder="ex: Nike, Zara, Apple…" value="{{ form.get('marque', '') }}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Description courte de l'article <span class="text-muted">(soyez précis)</span></label>
+      <textarea name="description" placeholder="ex: Jean slim bleu délavé, peu porté, taille 38, légère marque sur la poche droite…" required>{{ form.get('description', '') }}</textarea>
+    </div>
+    <div class="form-row-3">
+      <div class="form-group">
+        <label>Couleur / Matière</label>
+        <input type="text" name="couleur" placeholder="ex: Bleu, Cuir noir…" value="{{ form.get('couleur', '') }}">
+      </div>
+      <div class="form-group">
+        <label>Taille / Pointure</label>
+        <input type="text" name="taille" placeholder="ex: M, 42, 128cm…" value="{{ form.get('taille', '') }}">
+      </div>
+      <div class="form-group">
+        <label>État</label>
+        <select name="etat">
+          {% for e in ['neuf avec étiquette', 'neuf sans étiquette', 'très bon état', 'bon état', 'état correct'] %}
+          <option value="{{ e }}" {% if form.get('etat') == e %}selected{% endif %}>{{ e|capitalize }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">⚡ Générer l'annonce</button>
+  </form>
+</div>
+
+{% if result %}
+<div class="result-box">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+    <h2 style="margin:0">Résultat</h2>
+    <span class="prix-badge">💰 {{ result.prix_fourchette }}</span>
+  </div>
+
+  <div class="result-field">
+    <div class="field-label">
+      <span>TITRE <span class="text-muted">({{ result.titre|length }}/80 caractères)</span></span>
+      <button class="btn btn-outline btn-sm" onclick="copyField('titre')">Copier</button>
+    </div>
+    <div class="field-value" id="titre">{{ result.titre }}</div>
+  </div>
+
+  <div class="result-field">
+    <div class="field-label">
+      <span>DESCRIPTION</span>
+      <button class="btn btn-outline btn-sm" onclick="copyField('desc')">Copier</button>
+    </div>
+    <div class="field-value" id="desc">{{ result.description }}</div>
+  </div>
+
+  <div class="result-field">
+    <div class="field-label"><span>MOTS-CLÉS / TAGS</span></div>
+    <div class="tags">
+      {% for tag in result.tags %}
+      <span class="tag"># {{ tag }}</span>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="mt-16 flex gap-8">
+    <button class="btn btn-green btn-sm" onclick="copyAll()">📋 Tout copier</button>
+    <a href="/stock" class="btn btn-outline btn-sm">+ Ajouter au stock</a>
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+function copyField(id) {
+  const el = document.getElementById(id);
+  navigator.clipboard.writeText(el.textContent.trim());
+}
+function copyAll() {
+  const titre = document.getElementById('titre')?.textContent.trim() || '';
+  const desc = document.getElementById('desc')?.textContent.trim() || '';
+  navigator.clipboard.writeText(`${titre}\n\n${desc}`);
+  const btn = event.target;
+  btn.textContent = '✅ Copié !';
+  setTimeout(() => btn.textContent = '📋 Tout copier', 2000);
+}
+</script>
+{% endblock %}

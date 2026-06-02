@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block head %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+{% endblock %}
+{% block content %}
+<div class="flex justify-between items-center" style="margin-bottom:20px;">
+  <h1 style="margin:0">📊 Dashboard</h1>
+  <form method="GET" action="/dashboard" class="flex gap-8 items-center">
+    <label style="font-size:13px;color:var(--text-muted);">Objectif semaine (€)</label>
+    <input type="number" name="objectif" value="{{ objectif }}" style="width:90px;" min="1">
+    <button type="submit" class="btn btn-outline btn-sm">OK</button>
+  </form>
+</div>
+
+<div class="card-grid">
+  <div class="stat-card green">
+    <div class="label">Revenus totaux</div>
+    <div class="value">{{ "%.0f"|format(total_revenus) }} €</div>
+  </div>
+  <div class="stat-card blue">
+    <div class="label">Ce mois</div>
+    <div class="value">{{ "%.0f"|format(revenus_mois) }} €</div>
+  </div>
+  <div class="stat-card purple">
+    <div class="label">Cette semaine</div>
+    <div class="value">{{ "%.0f"|format(revenus_semaine) }} €</div>
+  </div>
+  <div class="stat-card yellow">
+    <div class="label">Potentiel en ligne</div>
+    <div class="value">{{ "%.0f"|format(potentiel) }} €</div>
+  </div>
+  <div class="stat-card green">
+    <div class="label">Ventes totales</div>
+    <div class="value">{{ nb_vendus }}</div>
+  </div>
+  <div class="stat-card blue">
+    <div class="label">Articles en ligne</div>
+    <div class="value">{{ nb_en_ligne }}</div>
+  </div>
+</div>
+
+<!-- Progress objectif semaine -->
+<div class="card mt-24">
+  <h2>Objectif semaine — {{ "%.0f"|format(objectif) }} €</h2>
+  <div class="progress-wrap">
+    <div class="progress-label">
+      <span>{{ "%.0f"|format(revenus_semaine) }} € réalisés</span>
+      <span>{{ progress }}%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width:{{ progress }}%"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Chart -->
+<div class="card mt-24">
+  <h2>Revenus par date de vente</h2>
+  <div class="chart-container">
+    <canvas id="salesChart"></canvas>
+  </div>
+</div>
+
+<!-- Recent sales table -->
+{% if recent_sales %}
+<div class="card mt-24">
+  <h2>Dernières ventes</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Article</th>
+          <th>Prix</th>
+          <th>Date</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in recent_sales %}
+        <tr>
+          <td style="font-weight:500;">{{ item.titre }}</td>
+          <td class="text-green" style="font-weight:700;">{{ item.prix_affiche }} €</td>
+          <td class="text-muted text-sm">{{ item.date_mise_en_ligne }}</td>
+          <td class="text-muted text-sm">{{ item.notes or '—' }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% else %}
+<div class="card mt-24" style="text-align:center;padding:40px;">
+  <div style="font-size:40px;margin-bottom:12px;">🎯</div>
+  <div class="text-muted">Pas encore de ventes. Allez lister vos 31 articles !</div>
+  <a href="/generate" class="btn btn-primary" style="margin-top:14px;">Générer une annonce</a>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+const labels = {{ chart_labels | safe }};
+const data = {{ chart_data | safe }};
+
+if (labels.length > 0) {
+  const ctx = document.getElementById('salesChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Revenus (€)',
+        data,
+        backgroundColor: 'rgba(108,99,255,0.7)',
+        borderColor: 'rgba(108,99,255,1)',
+        borderWidth: 1,
+        borderRadius: 6,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#7c82a0' }, grid: { color: '#2e3348' } },
+        y: { ticks: { color: '#7c82a0', callback: v => v + ' €' }, grid: { color: '#2e3348' } }
+      }
+    }
+  });
+} else {
+  document.getElementById('salesChart').parentElement.innerHTML =
+    '<p style="text-align:center;color:var(--text-muted);padding:60px 0;">Aucune vente à afficher pour l\'instant.</p>';
+}
+</script>
+{% endblock %}

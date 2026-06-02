@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "titre": "Nike Air Force 1 Blanc T42 — Très bon état",
+    "categorie": "chaussures",
+    "prix_affiche": 55,
+    "prix_cible": 50,
+    "prix_minimum": 40,
+    "statut": "En ligne",
+    "date_mise_en_ligne": "2026-05-28",
+    "notes": "Quelques traces légères sur la semelle, sinon parfait"
+  },
+  {
+    "id": "2",
+    "titre": "Levi's 501 Jean Bleu T38 — Bon état",
+    "categorie": "vetements_homme",
+    "prix_affiche": 28,
+    "prix_cible": 25,
+    "prix_minimum": 18,
+    "statut": "Vendu",
+    "date_mise_en_ligne": "2026-05-20",
+    "notes": "Vendu en 2 jours"
+  },
+  {
+    "id": "3",
+    "titre": "iPhone 12 64Go Noir — Très bon état débloqué",
+    "categorie": "electronique",
+    "prix_affiche": 220,
+    "prix_cible": 200,
+    "prix_minimum": 170,
+    "statut": "En ligne",
+    "date_mise_en_ligne": "2026-05-30",
+    "notes": "Batterie 89%, chargeur inclus"
+  },
+  {
+    "id": "4",
+    "titre": "Fender Squier Stratocaster Sunburst — Bon état",
+    "categorie": "instruments",
+    "prix_affiche": 150,
+    "prix_cible": 130,
+    "prix_minimum": 100,
+    "statut": "Vendu",
+    "date_mise_en_ligne": "2026-05-15",
+    "notes": "Litige résolu, acheteur satisfait"
+  },
+  {
+    "id": "5",
+    "titre": "Zara Robe Fleurie Bohème T38 — Neuf avec étiquette",
+    "categorie": "vetements_femme",
+    "prix_affiche": 22,
+    "prix_cible": 20,
+    "prix_minimum": 15,
+    "statut": "En ligne",
+    "date_mise_en_ligne": "2026-06-01",
+    "notes": "Cadeau non déballé"
+  }
+]

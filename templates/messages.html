@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Messages{% endblock %}
+{% block content %}
+<h1>💬 Templates de messages</h1>
+<p class="text-muted text-sm" style="margin-bottom:20px;">Cliquez "Copier" pour copier le message, ou modifiez-le directement (sauvegarde auto).</p>
+
+<div class="template-grid">
+  {% for t in templates %}
+  <div class="template-card">
+    <div class="cat">{{ t.categorie }}</div>
+    <textarea id="tpl-{{ t.id }}" data-id="{{ t.id }}" rows="4">{{ t.texte }}</textarea>
+    <div class="template-actions">
+      <button class="btn btn-primary btn-sm" onclick="copyTpl('{{ t.id }}')">📋 Copier</button>
+      <button class="btn btn-outline btn-sm" onclick="saveTpl('{{ t.id }}')">💾 Sauvegarder</button>
+      <span class="copy-status" id="status-{{ t.id }}">✅ Copié !</span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function copyTpl(id) {
+  const ta = document.getElementById('tpl-' + id);
+  navigator.clipboard.writeText(ta.value);
+  const s = document.getElementById('status-' + id);
+  s.style.display = 'inline';
+  setTimeout(() => s.style.display = 'none', 2000);
+}
+
+function saveTpl(id) {
+  const ta = document.getElementById('tpl-' + id);
+  fetch('/messages/save', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({id: id, texte: ta.value})
+  }).then(r => r.json()).then(d => {
+    const s = document.getElementById('status-' + id);
+    s.textContent = '✅ Sauvegardé !';
+    s.style.display = 'inline';
+    setTimeout(() => { s.style.display = 'none'; s.textContent = '✅ Copié !'; }, 2000);
+  });
+}
+</script>
+{% endblock %}

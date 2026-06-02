@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Vinted Tool{% endblock %}</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <nav>
+    <a href="/" class="logo">⚓ VintedTool</a>
+    <a href="/dashboard" {% if request.path == '/dashboard' or request.path == '/' %}class="active"{% endif %}>Dashboard</a>
+    <a href="/generate" {% if request.path == '/generate' %}class="active"{% endif %}>SEO</a>
+    <a href="/stock" {% if request.path == '/stock' %}class="active"{% endif %}>Stock</a>
+    <a href="/messages" {% if request.path == '/messages' %}class="active"{% endif %}>Messages</a>
+  </nav>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

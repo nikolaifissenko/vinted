@@ -1,0 +1,53 @@
+{
+  "vetements_homme": {
+    "mots_cles": ["vintage", "streetwear", "casual", "slim", "oversize", "coupe droite", "brodé", "imprimé", "uni", "rayé"],
+    "marques": ["Zara", "H&M", "Nike", "Adidas", "Levi's", "Tommy Hilfiger", "Ralph Lauren", "The North Face", "Carhartt", "Supreme"],
+    "etats": ["neuf avec étiquette", "neuf sans étiquette", "très bon état", "bon état", "état correct"],
+    "tailles": ["XS", "S", "M", "L", "XL", "XXL", "36", "38", "40", "42", "44", "46"],
+    "prix_fourchette": [5, 80],
+    "title_formula": "{marque} {type} {couleur} {taille} — {etat}"
+  },
+  "vetements_femme": {
+    "mots_cles": ["tendance", "bohème", "chic", "casual", "soirée", "floral", "uni", "oversize", "taille haute", "éco-responsable"],
+    "marques": ["Zara", "H&M", "Mango", "Shein", "Sézane", "Ba&sh", "& Other Stories", "Monki", "Bershka", "Pull&Bear"],
+    "etats": ["neuf avec étiquette", "neuf sans étiquette", "très bon état", "bon état", "état correct"],
+    "tailles": ["XS", "S", "M", "L", "XL", "34", "36", "38", "40", "42", "44"],
+    "prix_fourchette": [3, 70],
+    "title_formula": "{marque} {type} {couleur} {taille} — {etat}"
+  },
+  "chaussures": {
+    "mots_cles": ["confortables", "légères", "imperméables", "semelle épaisse", "cuir véritable", "daim", "lacets", "sans lacets"],
+    "marques": ["Nike", "Adidas", "New Balance", "Vans", "Converse", "Timberland", "Dr. Martens", "Skechers", "Puma", "Reebok"],
+    "etats": ["neuf avec boîte", "neuf sans boîte", "très bon état", "bon état", "état correct"],
+    "tailles": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46"],
+    "prix_fourchette": [10, 120],
+    "title_formula": "{marque} {type} {couleur} T{taille} — {etat}"
+  },
+  "electronique": {
+    "mots_cles": ["fonctionnel", "testé", "débloqué", "batterie ok", "sans rayure", "reconditionné", "accessoires inclus", "chargeur fourni"],
+    "marques": ["Apple", "Samsung", "Sony", "Xiaomi", "Huawei", "OnePlus", "LG", "Bose", "JBL", "Nintendo"],
+    "etats": ["neuf sous blister", "reconditionné", "très bon état", "bon état", "état correct"],
+    "prix_fourchette": [20, 500],
+    "title_formula": "{marque} {modele} {stockage} — {etat} {accessoires}"
+  },
+  "livres": {
+    "mots_cles": ["roman", "BD", "manga", "biographie", "développement personnel", "thriller", "science-fiction", "jeunesse", "classique"],
+    "etats": ["neuf", "très bon état", "bon état", "état correct"],
+    "prix_fourchette": [1, 15],
+    "title_formula": "{titre} — {auteur} ({genre}) {etat}"
+  },
+  "jeux_video": {
+    "mots_cles": ["complet", "boîte incluse", "notice", "multi", "solo", "RPG", "FPS", "aventure", "sport", "course"],
+    "marques": ["PlayStation", "Xbox", "Nintendo", "PC", "Switch", "PS4", "PS5", "Xbox One", "Xbox Series"],
+    "etats": ["neuf sous blister", "très bon état", "bon état", "état correct"],
+    "prix_fourchette": [5, 60],
+    "title_formula": "{titre} {console} — {etat} {details}"
+  },
+  "instruments": {
+    "mots_cles": ["débutant", "intermédiaire", "professionnel", "acoustique", "électrique", "ampli inclus", "housse incluse", "accordé", "révisé"],
+    "marques": ["Fender", "Gibson", "Yamaha", "Roland", "Casio", "Ibanez", "Epiphone", "Thomann", "Stagg"],
+    "etats": ["neuf", "très bon état", "bon état", "état correct"],
+    "prix_fourchette": [30, 800],
+    "title_formula": "{marque} {type} {modele} — {etat} {accessoires}"
+  }
+}
