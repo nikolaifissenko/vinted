@@ -64,5 +64,71 @@
     "statut": "Brouillon",
     "date_mise_en_ligne": "2026-09-01",
     "notes": "Mesures à ajouter avant mise en ligne. Fiche complète dans listings/chaps-pull-col-v-bleu-ciel.md"
+  },
+  {
+    "id": "7",
+    "titre": "Faber-Castell Cartable Porte-Dessins Jaune Grand Format",
+    "categorie": "accessoires",
+    "prix_affiche": 24,
+    "prix_cible": 20,
+    "prix_minimum": 15,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-01",
+    "notes": "Mesures à ajouter. Fiche : listings/faber-castell-cartable-jaune.md"
+  },
+  {
+    "id": "8",
+    "titre": "Faber-Castell Cartable Porte-Dessins Orange Grand Format",
+    "categorie": "accessoires",
+    "prix_affiche": 24,
+    "prix_cible": 20,
+    "prix_minimum": 15,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-01",
+    "notes": "Mesures à ajouter. Fiche : listings/faber-castell-cartable-orange.md"
+  },
+  {
+    "id": "9",
+    "titre": "Sac Carpisa Bandoulière Motif Ethnique Velours Bordeaux",
+    "categorie": "accessoires",
+    "prix_affiche": 15,
+    "prix_cible": 13,
+    "prix_minimum": 9,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-01",
+    "notes": "Velours froissé par endroits, à mentionner. Fiche : listings/carpisa-sac-velours-bordeaux.md"
+  },
+  {
+    "id": "10",
+    "titre": "Sac de Soirée Accessorize Noir Satin Nœud",
+    "categorie": "accessoires",
+    "prix_affiche": 14,
+    "prix_cible": 12,
+    "prix_minimum": 9,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-01",
+    "notes": "Fiche : listings/accessorize-sac-soiree-noir.md"
+  },
+  {
+    "id": "11",
+    "titre": "Tote Bag Imprimé Estampe Japonaise",
+    "categorie": "accessoires",
+    "prix_affiche": 11,
+    "prix_cible": 9,
+    "prix_minimum": 6,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-01",
+    "notes": "Pas de marque. Fiche : listings/tote-bag-estampe-japonaise.md"
+  },
+  {
+    "id": "12",
+    "titre": "Sac Bandoulière Rouge Effet Saffiano Chaîne Dorée",
+    "categorie": "accessoires",
+    "prix_affiche": 19,
+    "prix_cible": 16,
+    "prix_minimum": 12,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-01",
+    "notes": "Marque à identifier sur le fermoir avant publication. Fiche : listings/sac-rouge-saffiano-chaine.md"
   }
 ]
