@@ -53,5 +53,16 @@
     "statut": "En ligne",
     "date_mise_en_ligne": "2026-06-01",
     "notes": "Cadeau non déballé"
+  },
+  {
+    "id": "6",
+    "titre": "Chaps Pull Col V Bleu Ciel T.M — Très bon état",
+    "categorie": "vetements_homme",
+    "prix_affiche": 22,
+    "prix_cible": 20,
+    "prix_minimum": 16,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-01",
+    "notes": "Mesures à ajouter avant mise en ligne. Fiche complète dans listings/chaps-pull-col-v-bleu-ciel.md"
   }
 ]
