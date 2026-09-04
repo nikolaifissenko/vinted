@@ -53,5 +53,16 @@
     "statut": "En ligne",
     "date_mise_en_ligne": "2026-06-01",
     "notes": "Cadeau non déballé"
+  },
+  {
+    "id": "6",
+    "titre": "Chaussures sécurité Delta Plus S1P SIP T.41 embout acier neuves étiquette",
+    "categorie": "chaussures",
+    "prix_affiche": 26,
+    "prix_cible": 22,
+    "prix_minimum": 18,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-04",
+    "notes": "Embout acier, semelle antidérapante/antistatique résistante huiles, lacets tressés noir/jaune, neuves avec étiquette d'origine"
   }
 ]
