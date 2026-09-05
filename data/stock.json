@@ -152,5 +152,38 @@
     "statut": "Brouillon",
     "date_mise_en_ligne": "2026-09-05",
     "notes": "Vérifier sequins manquants avant envoi. Fiche : listings/zara-robe-sequins-noire.md"
+  },
+  {
+    "id": "15",
+    "titre": "Blouse Satinée Bronze Manches Longues",
+    "categorie": "vetements_femme",
+    "prix_affiche": 12,
+    "prix_cible": 10,
+    "prix_minimum": 7,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-05",
+    "notes": "Pas de marque visible, vérifier étiquette. Fiche : listings/blouse-satinee-bronze.md"
+  },
+  {
+    "id": "16",
+    "titre": "Robe T-Shirt Longue Bordeaux Fentes Côtés S/M",
+    "categorie": "vetements_femme",
+    "prix_affiche": 14,
+    "prix_cible": 11,
+    "prix_minimum": 8,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-05",
+    "notes": "Repasser avant photo. Fiche : listings/robe-tshirt-bordeaux.md"
+  },
+  {
+    "id": "17",
+    "titre": "Escarpins Parfois Satin Bleu Marine Bout Pointu T.38",
+    "categorie": "chaussures",
+    "prix_affiche": 17,
+    "prix_cible": 14,
+    "prix_minimum": 10,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-05",
+    "notes": "EN ATTENTE : confirmer si trace sur satin réelle ou effet de lumière avant publication — voir listings/parfois-escarpins-satin-marine.md (2 versions de prix)"
   }
 ]
