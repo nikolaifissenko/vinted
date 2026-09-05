@@ -130,5 +130,27 @@
     "statut": "Brouillon",
     "date_mise_en_ligne": "2026-09-01",
     "notes": "Marque à identifier sur le fermoir avant publication. Fiche : listings/sac-rouge-saffiano-chaine.md"
+  },
+  {
+    "id": "13",
+    "titre": "Pull Nautica NavTech Col V Bordeaux Taille S",
+    "categorie": "vetements_homme",
+    "prix_affiche": 20,
+    "prix_cible": 17,
+    "prix_minimum": 13,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-05",
+    "notes": "Repasser avant photo, mesures à ajouter. Fiche : listings/nautica-pull-col-v-bordeaux.md"
+  },
+  {
+    "id": "14",
+    "titre": "Robe Zara Sequins Noire Bretelles Moulante Taille S",
+    "categorie": "vetements_femme",
+    "prix_affiche": 26,
+    "prix_cible": 21,
+    "prix_minimum": 16,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-09-05",
+    "notes": "Vérifier sequins manquants avant envoi. Fiche : listings/zara-robe-sequins-noire.md"
   }
 ]
