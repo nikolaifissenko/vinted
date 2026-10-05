@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "titre": "Nike Air Force 1 Blanc T42 — Très bon état",
+    "titre": "Nike Air Force 1 sneakers bianche basse n. 42 ottime condizioni",
     "categorie": "chaussures",
     "prix_affiche": 55,
     "prix_cible": 50,
@@ -12,7 +12,7 @@
   },
   {
     "id": "2",
-    "titre": "Levi's 501 Jean Bleu T38 — Bon état",
+    "titre": "Levi's 501 jeans blu tg. 38 EU buone condizioni",
     "categorie": "vetements_homme",
     "prix_affiche": 28,
     "prix_cible": 25,
@@ -23,7 +23,7 @@
   },
   {
     "id": "3",
-    "titre": "iPhone 12 64Go Noir — Très bon état débloqué",
+    "titre": "iPhone 12 64GB nero sbloccato batteria 89% ottime condizioni",
     "categorie": "electronique",
     "prix_affiche": 220,
     "prix_cible": 200,
@@ -34,7 +34,7 @@
   },
   {
     "id": "4",
-    "titre": "Fender Squier Stratocaster Sunburst — Bon état",
+    "titre": "Fender Squier Stratocaster chitarra elettrica sunburst buone condizioni",
     "categorie": "instruments",
     "prix_affiche": 150,
     "prix_cible": 130,
@@ -45,7 +45,7 @@
   },
   {
     "id": "5",
-    "titre": "Zara Robe Fleurie Bohème T38 — Neuf avec étiquette",
+    "titre": "Zara abito a fiori boho tg. 38 EU nuovo con cartellino",
     "categorie": "vetements_femme",
     "prix_affiche": 22,
     "prix_cible": 20,
