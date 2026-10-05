@@ -56,3 +56,11 @@ Tout est stocké localement dans `data/` :
 | Prix cible | Ce que vous voulez vraiment toucher |
 | Prix minimum | Plancher en dessous duquel vous refusez |
 | Pièces vintage/soie | Ne pas brader — argument premium justifie +30% |
+
+### Vinted fee (ex « Buyer Protection fee »)
+
+Depuis le 5 octobre 2026 (Italie/UE), la Buyer Protection fee s'appelle **Vinted fee**. Elle est payée par l'acheteur,
+pas par le vendeur particulier : vous touchez le prix affiché. L'outil affiche le **total acheteur**
+(prix + fee) dans `/stock`, `/dashboard` et `/generate`, pour caler les prix psychologiques sur ce que l'acheteur voit vraiment.
+
+Barème actuel (Italie) : **0,70 € + 5 %** du prix. S'il change, modifier uniquement `data/fees.json`.

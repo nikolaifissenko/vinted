@@ -23,6 +23,35 @@ def save_json(filename, data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+# ─── Vinted fee ──────────────────────────────────────────────────────────────
+# Payé par l'acheteur en plus du prix affiché (vendeur particulier : 0 €).
+# Taux dans data/fees.json — modifier ce fichier si Vinted change le barème.
+
+def load_fees():
+    path = os.path.join(DATA_DIR, "fees.json")
+    if not os.path.exists(path):
+        return {"fixe": 0.70, "pourcentage": 0.05}
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def vinted_fee(prix, fees=None):
+    fees = fees or load_fees()
+    prix = float(prix or 0)
+    if prix <= 0:
+        return 0.0
+    return round(fees["fixe"] + prix * fees["pourcentage"], 2)
+
+
+def prix_acheteur(prix, fees=None):
+    return round(float(prix or 0) + vinted_fee(prix, fees), 2)
+
+
+@app.context_processor
+def inject_fees():
+    return {"vinted_fee": vinted_fee, "prix_acheteur": prix_acheteur, "fees": load_fees()}
+
+
 # ─── SEO Generator ───────────────────────────────────────────────────────────
 
 CATEGORY_LABELS = {
@@ -136,6 +165,7 @@ def generate_seo(description, categorie, marque="", taille="", etat="très bon �
         "description": desc,
         "tags": tags,
         "prix_fourchette": f"{prix_min} – {prix_max} €",
+        "prix_fourchette_acheteur": f"{prix_acheteur(prix_min):.2f} – {prix_acheteur(prix_max):.2f} €",
     }
 
 
@@ -166,8 +196,11 @@ def stock():
     vendus = [i for i in items if i["statut"] == "Vendu"]
     revenus = sum(float(i.get("prix_affiche", 0)) for i in vendus)
     potentiel = sum(float(i.get("prix_affiche", 0)) for i in items if i["statut"] == "En ligne")
+    fees = load_fees()
+    frais_vendus = sum(vinted_fee(i.get("prix_affiche", 0), fees) for i in vendus)
     return render_template(
         "stock.html",
+        frais_vendus=frais_vendus,
         items=items,
         total=total,
         en_ligne=en_ligne,
@@ -252,6 +285,8 @@ def dashboard():
 
     total_revenus = sum(float(i.get("prix_affiche", 0)) for i in vendus)
     potentiel = sum(float(i.get("prix_affiche", 0)) for i in en_ligne)
+    fees = load_fees()
+    frais_vendus = sum(vinted_fee(i.get("prix_affiche", 0), fees) for i in vendus)
 
     today = date.today()
     week_start = today.toordinal() - today.weekday()
@@ -288,6 +323,7 @@ def dashboard():
     return render_template(
         "dashboard.html",
         total_revenus=total_revenus,
+        frais_vendus=frais_vendus,
         revenus_semaine=revenus_semaine,
         revenus_mois=revenus_mois,
         potentiel=potentiel,

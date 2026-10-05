@@ -1,0 +1,9 @@
+{
+  "nom": "Vinted fee (ex Buyer Protection fee)",
+  "pays": "IT",
+  "fixe": 0.70,
+  "pourcentage": 0.05,
+  "payeur": "acheteur",
+  "source": "Tarif Italie en vigueur — renommé 'Vinted fee' le 5 oct. 2026, montant inchangé à ce jour",
+  "maj": "2026-10-05"
+}

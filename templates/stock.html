@@ -27,7 +27,14 @@
     <div class="label">Potentiel restant</div>
     <div class="value">{{ "%.0f"|format(potentiel) }} €</div>
   </div>
+  <div class="stat-card purple">
+    <div class="label">Vinted fee payée par vos acheteurs</div>
+    <div class="value">{{ "%.2f"|format(frais_vendus) }} €</div>
+  </div>
 </div>
+<p class="text-muted text-sm" style="margin:-8px 0 16px;">
+  Vinted fee = {{ "%.2f"|format(fees.fixe) }} € + {{ "%.0f"|format(fees.pourcentage * 100) }} % du prix, payée par l'acheteur — vous touchez le prix affiché.
+</p>
 
 <div class="card">
   <div class="table-wrap">
@@ -37,6 +44,7 @@
           <th>Article</th>
           <th>Catégorie</th>
           <th>Prix affiché</th>
+          <th>Total acheteur</th>
           <th>Cible</th>
           <th>Min</th>
           <th>Statut</th>
@@ -53,6 +61,7 @@
           </td>
           <td class="text-muted text-sm">{{ categories.get(item.categorie, item.categorie) }}</td>
           <td style="font-weight:700;">{{ item.prix_affiche }} €</td>
+          <td class="text-muted" title="dont Vinted fee {{ '%.2f'|format(vinted_fee(item.prix_affiche)) }} €">{{ "%.2f"|format(prix_acheteur(item.prix_affiche)) }} €</td>
           <td class="text-muted">{{ item.prix_cible }} €</td>
           <td class="text-muted">{{ item.prix_minimum }} €</td>
           <td>
