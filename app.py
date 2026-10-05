@@ -67,67 +67,72 @@ CATEGORY_LABELS = {
 DESCRIPTION_TEMPLATES = {
     "vetements_homme": (
         "✅ {etat} — {description_courte}\n\n"
-        "Idéal pour un look {style}. Matière agréable, coupe {coupe}.\n"
-        "Pas de trou, pas de tache, coutures parfaites.\n\n"
-        "📦 Envoi rapide en Mondial Relay ou Colissimo.\n"
-        "💬 N'hésitez pas à poser vos questions ou faire une offre raisonnable !"
+        "📐 Misure: spalle __ cm · ascella-ascella __ cm · lunghezza __ cm\n"
+        "Perfetto per un look {style}. Tessuto piacevole, vestibilità {coupe}.\n"
+        "Nessun buco, nessuna macchia, cuciture perfette.\n\n"
+        "📦 Spedizione rapida, imballaggio curato.\n"
+        "🔁 -10% acquistando 2 o più articoli dal mio profilo.\n"
+        "💬 Scrivimi per qualsiasi domanda o proposta ragionevole!"
     ),
     "vetements_femme": (
         "✅ {etat} — {description_courte}\n\n"
-        "Pièce {style}, parfaite pour {occasion}.\n"
-        "Tissu de qualité, aucun défaut visible.\n\n"
-        "📦 Envoi rapide en Mondial Relay ou Colissimo.\n"
-        "💬 Questions bienvenues, offres raisonnables acceptées !"
+        "📐 Misure: petto __ cm · vita __ cm · lunghezza __ cm\n"
+        "Capo {style}, perfetto per {occasion}.\n"
+        "Tessuto di qualità, nessun difetto visibile.\n\n"
+        "📦 Spedizione rapida, imballaggio curato.\n"
+        "🔁 -10% acquistando 2 o più articoli dal mio profilo.\n"
+        "💬 Domande benvenute, offerte ragionevoli accettate!"
     ),
     "chaussures": (
         "✅ {etat} — {description_courte}\n\n"
-        "Très peu portées, semelles en bon état.\n"
-        "Aucune déformation, lacets d'origine inclus.\n\n"
-        "📦 Envoi soigné avec protection.\n"
-        "💬 Des questions ? Je réponds vite !"
+        "📐 Lunghezza interna: __ cm\n"
+        "Poco indossate, suola in buono stato.\n"
+        "Nessuna deformazione, lacci originali inclusi.\n\n"
+        "📦 Spedizione curata in scatola protetta.\n"
+        "💬 Domande? Rispondo velocemente!"
     ),
     "electronique": (
         "✅ {etat} — {description_courte}\n\n"
-        "Testé et pleinement fonctionnel. {accessoires}\n"
-        "Aucune rayure majeure, écran impeccable.\n\n"
-        "📦 Emballage soigné, envoi suivi obligatoire.\n"
-        "💬 N'hésitez pas à me poser vos questions !"
+        "Testato e perfettamente funzionante. {accessoires}\n"
+        "Nessun graffio importante, schermo impeccabile.\n\n"
+        "📦 Imballaggio protetto, spedizione tracciata.\n"
+        "💬 Scrivimi per qualsiasi domanda!"
     ),
     "livres": (
         "✅ {etat} — {description_courte}\n\n"
-        "Pages propres, sans annotations ni soulignements.\n"
-        "Couverture en bon état.\n\n"
-        "📦 Envoi en enveloppe bulles protégée.\n"
-        "💬 Lot possible si vous achetez plusieurs livres !"
+        "Pagine pulite, senza annotazioni né sottolineature.\n"
+        "Copertina in buono stato.\n\n"
+        "📦 Spedizione in busta imbottita.\n"
+        "💬 Sconto se acquisti più libri insieme!"
     ),
     "jeux_video": (
         "✅ {etat} — {description_courte}\n\n"
-        "Jeu testé et fonctionnel, {details}.\n"
-        "Disque sans rayure, boîte incluse.\n\n"
-        "📦 Envoi rapide et soigné.\n"
-        "💬 Je vends d'autres jeux, n'hésitez pas à regarder mon profil !"
+        "Gioco testato e funzionante, {details}.\n"
+        "Disco senza graffi, custodia inclusa.\n\n"
+        "📦 Spedizione rapida e curata.\n"
+        "💬 Vendo altri giochi, dai un'occhiata al mio profilo!"
     ),
     "instruments": (
         "✅ {etat} — {description_courte}\n\n"
-        "Instrument en parfait état de fonctionnement. {accessoires}\n"
-        "Idéal pour {niveau}.\n\n"
-        "📦 Envoi soigné, emballage renforcé pour la protection.\n"
-        "💬 Questions ou négociation raisonnable bienvenues !"
+        "Strumento perfettamente funzionante. {accessoires}\n"
+        "Ideale per {niveau}.\n\n"
+        "📦 Spedizione curata, imballaggio rinforzato.\n"
+        "💬 Domande o trattativa ragionevole benvenute!"
     ),
 }
 
 STYLE_DEFAULTS = {
-    "vetements_homme": {"style": "casual / streetwear", "coupe": "confortable"},
-    "vetements_femme": {"style": "tendance", "occasion": "toutes occasions"},
+    "vetements_homme": {"style": "casual / streetwear", "coupe": "comoda"},
+    "vetements_femme": {"style": "di tendenza", "occasion": "ogni occasione"},
     "chaussures": {},
-    "electronique": {"accessoires": "Chargeur inclus."},
+    "electronique": {"accessoires": "Caricatore incluso."},
     "livres": {},
-    "jeux_video": {"details": "notice incluse"},
-    "instruments": {"accessoires": "Housse incluse.", "niveau": "débutants et intermédiaires"},
+    "jeux_video": {"details": "manuale incluso"},
+    "instruments": {"accessoires": "Custodia inclusa.", "niveau": "principianti e intermedi"},
 }
 
 
-def generate_seo(description, categorie, marque="", taille="", etat="très bon état", couleur=""):
+def generate_seo(description, categorie, marque="", taille="", etat="ottime condizioni", couleur=""):
     keywords_data = load_json("seo_keywords.json")
     cat_data = keywords_data.get(categorie, {})
     mots_cles = cat_data.get("mots_cles", [])
@@ -136,28 +141,31 @@ def generate_seo(description, categorie, marque="", taille="", etat="très bon �
     # Build title
     parts = [p for p in [marque, description[:40], couleur, taille] if p.strip()]
     titre_base = " ".join(parts)
-    etat_label = etat if etat else "très bon état"
-    titre = f"{titre_base} — {etat_label}"
+    etat_label = etat if etat else "ottime condizioni"
+    titre = f"{titre_base} {etat_label}"
     if len(titre) > 80:
         titre = titre[:77] + "..."
 
     # Build description
     defaults = STYLE_DEFAULTS.get(categorie, {})
     template = DESCRIPTION_TEMPLATES.get(
-        categorie, "✅ {etat} — {description_courte}\n\n📦 Envoi rapide.\n💬 Questions bienvenues !"
+        categorie, "✅ {etat} — {description_courte}\n\n📦 Spedizione rapida.\n💬 Domande benvenute!"
     )
     desc = template.format(
-        etat=etat_label,
+        etat=etat_label.capitalize(),
         description_courte=description[:80],
         **defaults,
     )
 
-    # Tags
-    selected_tags = mots_cles[:6]
+    # Tags — seulement les mots-clés qui décrivent vraiment l'article (+ le genre)
+    texte = f"{description} {couleur}".lower()
+    selected_tags = [m for m in mots_cles if m.lower() in texte or m in ("uomo", "donna")]
+    if couleur:
+        selected_tags.append(couleur.lower())
     if marque:
         selected_tags.insert(0, marque.lower())
     if taille:
-        selected_tags.append(f"taille {taille}")
+        selected_tags.append(f"taglia {taille}")
     tags = list(dict.fromkeys(selected_tags))[:10]
 
     return {
@@ -180,7 +188,7 @@ def generate():
             categorie=form.get("categorie", "vetements_homme"),
             marque=form.get("marque", ""),
             taille=form.get("taille", ""),
-            etat=form.get("etat", "très bon état"),
+            etat=form.get("etat", "ottime condizioni"),
             couleur=form.get("couleur", ""),
         )
     return render_template("generate.html", result=result, form=form, categories=CATEGORY_LABELS)
