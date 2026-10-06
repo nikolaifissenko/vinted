@@ -67,7 +67,7 @@ CATEGORY_LABELS = {
 DESCRIPTION_TEMPLATES = {
     "vetements_homme": (
         "✅ {etat} — {description_courte}\n\n"
-        "📐 Misure: spalle __ cm · ascella-ascella __ cm · lunghezza __ cm\n"
+        "{misure}"
         "Perfetto per un look {style}. Tessuto piacevole, vestibilità {coupe}.\n"
         "Nessun buco, nessuna macchia, cuciture perfette.\n\n"
         "📦 Spedizione rapida, imballaggio curato.\n"
@@ -76,7 +76,7 @@ DESCRIPTION_TEMPLATES = {
     ),
     "vetements_femme": (
         "✅ {etat} — {description_courte}\n\n"
-        "📐 Misure: petto __ cm · vita __ cm · lunghezza __ cm\n"
+        "{misure}"
         "Capo {style}, perfetto per {occasion}.\n"
         "Tessuto di qualità, nessun difetto visibile.\n\n"
         "📦 Spedizione rapida, imballaggio curato.\n"
@@ -85,7 +85,7 @@ DESCRIPTION_TEMPLATES = {
     ),
     "chaussures": (
         "✅ {etat} — {description_courte}\n\n"
-        "📐 Lunghezza interna: __ cm\n"
+        "{misure}"
         "Poco indossate, suola in buono stato.\n"
         "Nessuna deformazione, lacci originali inclusi.\n\n"
         "📦 Spedizione curata in scatola protetta.\n"
@@ -132,6 +132,42 @@ STYLE_DEFAULTS = {
 }
 
 
+# Misure standard per taglia (misure del corpo, cm) — indicative, non misurate sul capo
+SIZE_CHARTS = {
+    "vetements_femme": {
+        "XS": ("IT 38-40", "busto 80-84 · vita 62-66 · fianchi 88-92"),
+        "S": ("IT 42", "busto 84-88 · vita 66-70 · fianchi 92-96"),
+        "M": ("IT 44", "busto 88-92 · vita 70-74 · fianchi 96-100"),
+        "L": ("IT 46", "busto 94-98 · vita 76-80 · fianchi 102-106"),
+        "XL": ("IT 48", "busto 100-104 · vita 82-86 · fianchi 108-112"),
+        "XXL": ("IT 50", "busto 106-110 · vita 88-92 · fianchi 114-118"),
+    },
+    "vetements_homme": {
+        "XS": ("IT 44", "petto 80-86 · vita 68-74"),
+        "S": ("IT 46", "petto 88-94 · vita 76-82"),
+        "M": ("IT 48-50", "petto 96-102 · vita 84-90"),
+        "L": ("IT 52", "petto 104-110 · vita 92-98"),
+        "XL": ("IT 54", "petto 112-118 · vita 100-106"),
+        "XXL": ("IT 56", "petto 120-126 · vita 108-114"),
+    },
+}
+
+
+def misure_standard(categorie, taille):
+    taille = (taille or "").strip().upper()
+    if categorie == "chaussures":
+        try:
+            n = float(taille.replace(",", "."))
+        except ValueError:
+            return ""
+        return f"📐 N. {taille} EU = piede di circa {n / 1.5 - 1.5:.1f} cm (indicativo)\n"
+    chart = SIZE_CHARTS.get(categorie, {})
+    if taille not in chart:
+        return ""
+    it, misure = chart[taille]
+    return f"📏 Taglia {taille} ({it}) — misure standard del corpo: {misure} cm\n"
+
+
 def generate_seo(description, categorie, marque="", taille="", etat="ottime condizioni", couleur=""):
     keywords_data = load_json("seo_keywords.json")
     cat_data = keywords_data.get(categorie, {})
@@ -153,6 +189,7 @@ def generate_seo(description, categorie, marque="", taille="", etat="ottime cond
     )
     desc = template.format(
         etat=etat_label.capitalize(),
+        misure=misure_standard(categorie, taille),
         description_courte=description[:80],
         **defaults,
     )
