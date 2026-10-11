@@ -75,5 +75,16 @@
     "statut": "Brouillon",
     "date_mise_en_ligne": "2026-10-06",
     "notes": "Étiquette 'New Collection' (sans marque). Interno felpa grigia. Taille L. TODO: compo + photo dos. Ne pas écrire 'lana' sans étiquette."
+  },
+  {
+    "id": "d5b7c2c6",
+    "titre": "Maglione mezza zip Redmond blu navy uomo taglia L",
+    "categorie": "vetements_homme",
+    "prix_affiche": 16,
+    "prix_cible": 13,
+    "prix_minimum": 12,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-10-11",
+    "notes": "Redmond Clothing Outfitters. Interno collo grigio a coste, tiretto similpelle. TODO: compo (se lana → 20-22 €, 'lana' nel titolo), misure in piano, levapelucchi + rifare foto. Mai eliminare/ripubblicare: Modifica o ribasso ≥10 %."
   }
 ]

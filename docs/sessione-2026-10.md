@@ -94,3 +94,25 @@ casual con jeans e sneakers.
 - [ ] Maglione: rifare foto su fondo bianco + retro + etichetta composizione → poi "En ligne"
 - [ ] Cappotto: foto etichetta composizione (scrivere "lana" solo se c'è sull'etichetta) + foto retro; foto principale = cappotto chiuso sul muro bianco; taglia Vinted "L / IT 46"
 - [ ] Conservare scontrini / prove di autenticità per ogni articolo di marca (48 h in caso di segnalazione)
+
+## 5. Redmond — maglione mezza zip blu navy L (bozza, 11 ottobre)
+**Prezzo:** 16 € (acquirente 17,50 €) · obiettivo 13 € · minimo 12 € · se l'etichetta dice lana → 20-22 € e "lana" nel titolo
+
+**Titolo**
+```
+Maglione mezza zip Redmond blu navy uomo taglia L
+```
+**Descrizione**
+```
+Vendo questo maglione Redmond con mezza zip, blu navy, taglia L. L'ho messo poco, è ancora in ottime condizioni: niente buchi né macchie, e il colore non è sbiadito.
+
+Il tessuto è leggero, va bene sia da solo sia sopra una camicia. Dentro il collo c'è una fascia grigia a coste che si vede quando lo porti aperto, e il tiretto della zip è in similpelle marrone. Veste regolare.
+
+Misure in piano: ascella-ascella __ cm, lunghezza __ cm.
+
+Spedisco in 1-2 giorni. Se ti interessano altre cose dal mio profilo, facciamo un pacco unico con lo sconto.
+
+Maglione half zip, quarter zip, lupetto con zip, pullover uomo, stile preppy, old money, casual elegante.
+```
+- [ ] Levapelucchi sul retro, foto principale = capo appeso alla porta, + foto etichetta taglia e composizione
+- [ ] Se invenduto dopo 10 giorni: **Modifica** (ordine foto, titolo) o ribasso a 14 € (≥10 %, notifica i preferiti) — non eliminare/ripubblicare
