@@ -86,5 +86,27 @@
     "statut": "Brouillon",
     "date_mise_en_ligne": "2026-10-11",
     "notes": "Redmond Clothing Outfitters. Interno collo grigio a coste, tiretto similpelle. TODO: compo (se lana → 20-22 €, 'lana' nel titolo), misure in piano, levapelucchi + rifare foto. Mai eliminare/ripubblicare: Modifica o ribasso ≥10 %."
+  },
+  {
+    "id": "a3c91e07",
+    "titre": "Cappotto Stradivarius cammello oversize con revers, tg M",
+    "categorie": "vetements_femme",
+    "prix_affiche": 24,
+    "prix_cible": 20,
+    "prix_minimum": 18,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-10-31",
+    "notes": "Stradivarius EUR M. Ascella-ascella 53 cm, lunghezza 82 cm. Fodera nera. TODO: compo (se lana → 30 €, 'misto lana' nel titolo), tagliare fili. Priorità: in stagione."
+  },
+  {
+    "id": "b8e4d215",
+    "titre": "Trench corto nero doppiopetto satinato, sfiancato tg M",
+    "categorie": "vetements_femme",
+    "prix_affiche": 18,
+    "prix_cible": 15,
+    "prix_minimum": 13,
+    "statut": "Brouillon",
+    "date_mise_en_ligne": "2026-10-31",
+    "notes": "Brand ignoto (se Zara/Mango → 24 €). Ascella-ascella 45 cm (veste piccolo), lunghezza 70 cm. TODO: cintura?, levapelucchi + vapore, segno chiaro orlo, misura spalle. Fine stagione: ribasso a 15 € ~20/11 o ripubblicare a marzo."
   }
 ]
