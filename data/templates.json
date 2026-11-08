@@ -43,5 +43,10 @@
     "id": "9",
     "categorie": "Remerciement après vente",
     "texte": "Merci beaucoup pour votre achat ! J'expédie dès aujourd'hui / demain. N'hésitez pas à me laisser une évaluation une fois l'article reçu, c'est très précieux pour moi. Belle journée à vous ! 😊"
+  },
+  {
+    "id": "10",
+    "categorie": "Question taille + demande de photos",
+    "texte": "Bonjour ! 😊\nC'est bien une taille [TAILLE] ([ÉQUIVALENCE ex: EU 38]). Pour vérifier qu'il vous aille, voici les mesures prises à plat :\n\n* Tour de taille : [X] cm (soit [2X] cm de tour)\n* Tour de hanches : [Y] cm (soit [2Y] cm de tour)\n* Entrejambe : [Z] cm\n* Longueur totale : [L] cm\n\nJe vous envoie d'autres photos tout de suite (étiquette, détail du tissu et dos).\n\nBelle journée !"
   }
 ]
