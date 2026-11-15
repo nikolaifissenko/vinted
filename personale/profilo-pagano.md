@@ -237,3 +237,25 @@ Mood: calm, balanced, timeless. Think Greek vase line drawing reinterpreted by
 a contemporary fine-line tattoo artist. Provide 3 variations: ultra-minimal
 (ship + roots + star only), balanced, and with meander frame.
 ```
+
+---
+
+## Concept finale scelto
+
+Il tondo a figure nere (prima versione): nave con occhio sulla prua, caduceo sulla vela, Ulisse al timone, radici d'ulivo sotto la chiglia, meandro + onde, delfino con àncora in basso.
+
+**Prompt di modifica da usare con l'immagine (cambia solo l'elmo):**
+
+```
+Keep this exact design, style, colors and composition identical.
+Change only one thing: replace Odysseus' conical cap with a Corinthian helmet
+(closed cheek-guards, narrow eye slit, nose guard, tall black horsehair crest),
+in the same black-figure style. Keep his face, beard, pose and everything else
+exactly as it is.
+```
+
+**Da sistemare prima di tatuare (con il tatuatore sullo stencil):**
+- Scritta troncata a sinistra ("ΣΠΕΥΔΕ ΒΡΕ"): tenere una sola scritta intera, ΣΠΕΥΔΕ ΒΡΑΔΕΩΣ.
+- Opzionale: Sidus Iulium (stella a 8 punte con coda) al posto dei sandali alati.
+- Versione B/N: togliere la macchia nera sotto le radici.
+- Diametro minimo 14-15 cm (spalla, polpaccio, coscia). Portare solo la versione bianco e nero.
