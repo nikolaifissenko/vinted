@@ -187,13 +187,15 @@ solid black fills where useful, flat and graphic, high contrast, generous
 negative space. Masculine, austere, warrior aesthetic. No flowers,
 no delicate ornaments, no curls. Size about 10-12 cm, vertical.
 
-Main element: the head of Odysseus in strict profile, wearing a Corinthian
-helmet (closed cheek-guards, narrow eye slit, nose guard, tall horsehair
-crest drawn as a solid black arc). Short strong beard visible under the
-cheek-guard. Geometric, sculptural, calm and watchful — not angry.
+Main scene: Odysseus standing on the deck of a Greek ship, full figure
+in profile, as a solid black silhouette like on a black-figure vase.
+He wears a Corinthian helmet (closed cheek-guards, narrow eye slit,
+nose guard, tall horsehair crest as a solid black arc), a short tunic,
+a round hoplite shield on his back. One hand on the steering oar,
+body upright, calm and watchful, looking ahead to the horizon — not fighting.
 
-Below the helmet, small and integrated: a Greek ship with one square sail,
-in a few hard lines, on a single stylized wave line. The mast is a caduceus
+The ship: curved hull with a raised stern, one square sail, drawn in a few
+hard lines on a single stylized wave line. The mast is a caduceus
 (straight staff, two snakes as one continuous line, small wings at the top).
 
 Under the hull, a few strong angular olive roots reaching downward, with
@@ -206,8 +208,8 @@ Optional: a thick Greek meander band as a horizontal base line.
 Optional inscription in sharp Greek capitals: ΣΠΕΥΔΕ ΒΡΑΔΕΩΣ.
 
 References: black-figure vase silhouettes, Greek coin profiles,
-modern blackwork tattoo. Provide 3 variations: helmet only with star,
-helmet + ship, full composition with meander base.
+modern blackwork tattoo. Provide 3 variations: ship + Odysseus + star only,
+with olive roots, full composition with meander base.
 ```
 
 ### Variante minimalista fine-line (scartata: troppo delicata)
