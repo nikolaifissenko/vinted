@@ -163,6 +163,9 @@ Above the ship, flying: a pair of small winged sandals (Hermes).
 Below the waterline, the ship's keel turns into the roots of an olive tree
 whose roots sink into the sea floor — the ship is anchored by the olive tree
 (symbol of a home that does not move, and of a love built on friendship).
+Myrtle branches (Venus' plant) are woven into the olive's crown, and above
+the tree shines the Sidus Iulium: an eight-pointed star with a short flaming
+comet tail, exactly as on Roman denarii of Augustus.
 
 Bottom of the tondo: a dolphin wrapped around an anchor (the "festina lente"
 emblem), small, in the same black-figure style.
