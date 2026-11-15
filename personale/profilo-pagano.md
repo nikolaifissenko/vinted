@@ -177,3 +177,29 @@ Style references: Exekias, the Dionysos Cup (ship on a wine-dark sea).
 Minimal, balanced, iconic, high contrast. Also provide a version in pure
 black on white for the tattoo stencil.
 ```
+
+### Variante minimalista e moderna
+
+```
+Design a minimalist, modern fine-line tattoo inspired by ancient Greek art.
+Single-needle style, thin uniform black lines on white, lots of negative space,
+no shading, no color, geometric and elegant. Size: about 8-10 cm, vertical.
+
+Elements, reduced to their essence:
+- A small Greek ship drawn in a few clean lines: curved hull, one square sail,
+  a simple wave line beneath it.
+- The mast is a caduceus: a straight staff with two snakes drawn as a single
+  continuous line, two tiny wings at the top (Hermes).
+- Under the hull, the waterline becomes the roots of an olive tree, drawn as
+  a few fine flowing lines reaching downward (the ship is rooted, not anchored).
+- Three or four olive leaves and one sprig of myrtle along the roots.
+- Above the sail, a small eight-pointed star with a short comet tail
+  (Sidus Iulium), in dotwork.
+- Optional: a thin Greek meander line as a minimal frame or as a single
+  horizontal band under the composition.
+- Optional tiny inscription in thin Greek capitals: ΣΠΕΥΔΕ ΒΡΑΔΕΩΣ.
+
+Mood: calm, balanced, timeless. Think Greek vase line drawing reinterpreted by
+a contemporary fine-line tattoo artist. Provide 3 variations: ultra-minimal
+(ship + roots + star only), balanced, and with meander frame.
+```
