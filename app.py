@@ -68,87 +68,87 @@ DESCRIPTION_TEMPLATES = {
     "vetements_homme": (
         "✅ {etat} — {description_courte}\n\n"
         "{misure}"
-        "Perfetto per un look {style}. Tessuto piacevole, vestibilità {coupe}.\n"
-        "Nessun buco, nessuna macchia, cuciture perfette.\n\n"
-        "📦 Spedizione rapida, imballaggio curato.\n"
-        "🔁 -10% acquistando 2 o più articoli dal mio profilo.\n"
-        "💬 Scrivimi per qualsiasi domanda o proposta ragionevole!"
+        "Idéal pour un look {style}. Matière agréable, coupe {coupe}.\n"
+        "Pas de trou, pas de tache, coutures impeccables.\n\n"
+        "📦 Envoi rapide et soigné.\n"
+        "🔁 -10 % dès 2 articles achetés dans mon dressing.\n"
+        "💬 N'hésitez pas pour vos questions ou une offre raisonnable !"
     ),
     "vetements_femme": (
         "✅ {etat} — {description_courte}\n\n"
         "{misure}"
-        "Capo {style}, perfetto per {occasion}.\n"
-        "Tessuto di qualità, nessun difetto visibile.\n\n"
-        "📦 Spedizione rapida, imballaggio curato.\n"
-        "🔁 -10% acquistando 2 o più articoli dal mio profilo.\n"
-        "💬 Domande benvenute, offerte ragionevoli accettate!"
+        "Pièce {style}, parfaite pour {occasion}.\n"
+        "Tissu de qualité, aucun défaut visible.\n\n"
+        "📦 Envoi rapide et soigné.\n"
+        "🔁 -10 % dès 2 articles achetés dans mon dressing.\n"
+        "💬 Questions bienvenues, offres raisonnables acceptées !"
     ),
     "chaussures": (
         "✅ {etat} — {description_courte}\n\n"
         "{misure}"
-        "Poco indossate, suola in buono stato.\n"
-        "Nessuna deformazione, lacci originali inclusi.\n\n"
-        "📦 Spedizione curata in scatola protetta.\n"
-        "💬 Domande? Rispondo velocemente!"
+        "Très peu portées, semelles en bon état.\n"
+        "Aucune déformation, lacets d'origine inclus.\n\n"
+        "📦 Envoi soigné en carton protégé.\n"
+        "💬 Une question ? Je réponds vite !"
     ),
     "electronique": (
         "✅ {etat} — {description_courte}\n\n"
-        "Testato e perfettamente funzionante. {accessoires}\n"
-        "Nessun graffio importante, schermo impeccabile.\n\n"
-        "📦 Imballaggio protetto, spedizione tracciata.\n"
-        "💬 Scrivimi per qualsiasi domanda!"
+        "Testé et parfaitement fonctionnel. {accessoires}\n"
+        "Aucune rayure importante, écran impeccable.\n\n"
+        "📦 Emballage protégé, envoi suivi.\n"
+        "💬 N'hésitez pas à me poser vos questions !"
     ),
     "livres": (
         "✅ {etat} — {description_courte}\n\n"
-        "Pagine pulite, senza annotazioni né sottolineature.\n"
-        "Copertina in buono stato.\n\n"
-        "📦 Spedizione in busta imbottita.\n"
-        "💬 Sconto se acquisti più libri insieme!"
+        "Pages propres, sans annotations ni soulignements.\n"
+        "Couverture en bon état.\n\n"
+        "📦 Envoi en enveloppe à bulles.\n"
+        "💬 Prix dégressif si vous prenez plusieurs livres !"
     ),
     "jeux_video": (
         "✅ {etat} — {description_courte}\n\n"
-        "Gioco testato e funzionante, {details}.\n"
-        "Disco senza graffi, custodia inclusa.\n\n"
-        "📦 Spedizione rapida e curata.\n"
-        "💬 Vendo altri giochi, dai un'occhiata al mio profilo!"
+        "Jeu testé et fonctionnel, {details}.\n"
+        "Disque sans rayure, boîtier inclus.\n\n"
+        "📦 Envoi rapide et soigné.\n"
+        "💬 Je vends d'autres jeux, jetez un œil à mon dressing !"
     ),
     "instruments": (
         "✅ {etat} — {description_courte}\n\n"
-        "Strumento perfettamente funzionante. {accessoires}\n"
-        "Ideale per {niveau}.\n\n"
-        "📦 Spedizione curata, imballaggio rinforzato.\n"
-        "💬 Domande o trattativa ragionevole benvenute!"
+        "Instrument en parfait état de marche. {accessoires}\n"
+        "Idéal pour {niveau}.\n\n"
+        "📦 Envoi soigné, emballage renforcé.\n"
+        "💬 Questions ou négociation raisonnable bienvenues !"
     ),
 }
 
 STYLE_DEFAULTS = {
-    "vetements_homme": {"style": "casual / streetwear", "coupe": "comoda"},
-    "vetements_femme": {"style": "di tendenza", "occasion": "ogni occasione"},
+    "vetements_homme": {"style": "casual / streetwear", "coupe": "confortable"},
+    "vetements_femme": {"style": "tendance", "occasion": "toutes les occasions"},
     "chaussures": {},
-    "electronique": {"accessoires": "Caricatore incluso."},
+    "electronique": {"accessoires": "Chargeur inclus."},
     "livres": {},
-    "jeux_video": {"details": "manuale incluso"},
-    "instruments": {"accessoires": "Custodia inclusa.", "niveau": "principianti e intermedi"},
+    "jeux_video": {"details": "notice incluse"},
+    "instruments": {"accessoires": "Housse incluse.", "niveau": "débutants et intermédiaires"},
 }
 
 
-# Misure standard per taglia (misure del corpo, cm) — indicative, non misurate sul capo
+# Mensurations standard par taille (corps, cm) — indicatives, pas mesurées sur le vêtement
 SIZE_CHARTS = {
     "vetements_femme": {
-        "XS": ("IT 38-40", "busto 80-84 · vita 62-66 · fianchi 88-92"),
-        "S": ("IT 42", "busto 84-88 · vita 66-70 · fianchi 92-96"),
-        "M": ("IT 44", "busto 88-92 · vita 70-74 · fianchi 96-100"),
-        "L": ("IT 46", "busto 94-98 · vita 76-80 · fianchi 102-106"),
-        "XL": ("IT 48", "busto 100-104 · vita 82-86 · fianchi 108-112"),
-        "XXL": ("IT 50", "busto 106-110 · vita 88-92 · fianchi 114-118"),
+        "XS": ("FR 34", "poitrine 80-84 · taille 62-66 · hanches 88-92"),
+        "S": ("FR 36", "poitrine 84-88 · taille 66-70 · hanches 92-96"),
+        "M": ("FR 38", "poitrine 88-92 · taille 70-74 · hanches 96-100"),
+        "L": ("FR 40", "poitrine 94-98 · taille 76-80 · hanches 102-106"),
+        "XL": ("FR 42", "poitrine 100-104 · taille 82-86 · hanches 108-112"),
+        "XXL": ("FR 44", "poitrine 106-110 · taille 88-92 · hanches 114-118"),
     },
     "vetements_homme": {
-        "XS": ("IT 44", "petto 80-86 · vita 68-74"),
-        "S": ("IT 46", "petto 88-94 · vita 76-82"),
-        "M": ("IT 48-50", "petto 96-102 · vita 84-90"),
-        "L": ("IT 52", "petto 104-110 · vita 92-98"),
-        "XL": ("IT 54", "petto 112-118 · vita 100-106"),
-        "XXL": ("IT 56", "petto 120-126 · vita 108-114"),
+        "XS": ("FR 42", "poitrine 80-86 · taille 68-74"),
+        "S": ("FR 44", "poitrine 88-94 · taille 76-82"),
+        "M": ("FR 46-48", "poitrine 96-102 · taille 84-90"),
+        "L": ("FR 50", "poitrine 104-110 · taille 92-98"),
+        "XL": ("FR 52", "poitrine 112-118 · taille 100-106"),
+        "XXL": ("FR 54", "poitrine 120-126 · taille 108-114"),
     },
 }
 
@@ -160,15 +160,15 @@ def misure_standard(categorie, taille):
             n = float(taille.replace(",", "."))
         except ValueError:
             return ""
-        return f"📐 N. {taille} EU = piede di circa {n / 1.5 - 1.5:.1f} cm (indicativo)\n"
+        return f"📐 Pointure {taille} EU = pied d'environ {n / 1.5 - 1.5:.1f} cm (indicatif)\n"
     chart = SIZE_CHARTS.get(categorie, {})
     if taille not in chart:
         return ""
-    it, misure = chart[taille]
-    return f"📏 Taglia {taille} ({it}) — misure standard del corpo: {misure} cm\n"
+    fr, misure = chart[taille]
+    return f"📏 Taille {taille} ({fr}) — mensurations standard : {misure} cm\n"
 
 
-def generate_seo(description, categorie, marque="", taille="", etat="ottime condizioni", couleur=""):
+def generate_seo(description, categorie, marque="", taille="", etat="très bon état", couleur=""):
     keywords_data = load_json("seo_keywords.json")
     cat_data = keywords_data.get(categorie, {})
     mots_cles = cat_data.get("mots_cles", [])
@@ -177,7 +177,7 @@ def generate_seo(description, categorie, marque="", taille="", etat="ottime cond
     # Build title
     parts = [p for p in [marque, description[:40], couleur, taille] if p.strip()]
     titre_base = " ".join(parts)
-    etat_label = etat if etat else "ottime condizioni"
+    etat_label = etat if etat else "très bon état"
     titre = f"{titre_base} {etat_label}"
     if len(titre) > 80:
         titre = titre[:77] + "..."
@@ -185,7 +185,7 @@ def generate_seo(description, categorie, marque="", taille="", etat="ottime cond
     # Build description
     defaults = STYLE_DEFAULTS.get(categorie, {})
     template = DESCRIPTION_TEMPLATES.get(
-        categorie, "✅ {etat} — {description_courte}\n\n📦 Spedizione rapida.\n💬 Domande benvenute!"
+        categorie, "✅ {etat} — {description_courte}\n\n📦 Envoi rapide.\n💬 Questions bienvenues !"
     )
     desc = template.format(
         etat=etat_label.capitalize(),
@@ -196,13 +196,13 @@ def generate_seo(description, categorie, marque="", taille="", etat="ottime cond
 
     # Tags — seulement les mots-clés qui décrivent vraiment l'article (+ le genre)
     texte = f"{description} {couleur}".lower()
-    selected_tags = [m for m in mots_cles if m.lower() in texte or m in ("uomo", "donna")]
+    selected_tags = [m for m in mots_cles if m.lower() in texte or m in ("homme", "femme")]
     if couleur:
         selected_tags.append(couleur.lower())
     if marque:
         selected_tags.insert(0, marque.lower())
     if taille:
-        selected_tags.append(f"taglia {taille}")
+        selected_tags.append(f"taille {taille}")
     tags = list(dict.fromkeys(selected_tags))[:10]
 
     return {
@@ -225,7 +225,7 @@ def generate():
             categorie=form.get("categorie", "vetements_homme"),
             marque=form.get("marque", ""),
             taille=form.get("taille", ""),
-            etat=form.get("etat", "ottime condizioni"),
+            etat=form.get("etat", "très bon état"),
             couleur=form.get("couleur", ""),
         )
     return render_template("generate.html", result=result, form=form, categories=CATEGORY_LABELS)

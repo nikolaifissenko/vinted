@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "titre": "Nike Air Force 1 sneakers bianche basse n. 42 ottime condizioni",
+    "titre": "Nike Air Force 1 baskets blanches basses homme T42 très bon état",
     "categorie": "chaussures",
     "prix_affiche": 55,
     "prix_cible": 50,
@@ -12,7 +12,7 @@
   },
   {
     "id": "2",
-    "titre": "Levi's 501 jeans blu tg. 38 EU buone condizioni",
+    "titre": "Levi's 501 jean bleu homme T38 bon état",
     "categorie": "vetements_homme",
     "prix_affiche": 28,
     "prix_cible": 25,
@@ -23,7 +23,7 @@
   },
   {
     "id": "3",
-    "titre": "iPhone 12 64GB nero sbloccato batteria 89% ottime condizioni",
+    "titre": "iPhone 12 64 Go noir débloqué très bon état",
     "categorie": "electronique",
     "prix_affiche": 220,
     "prix_cible": 200,
@@ -34,7 +34,7 @@
   },
   {
     "id": "4",
-    "titre": "Fender Squier Stratocaster chitarra elettrica sunburst buone condizioni",
+    "titre": "Fender Squier Stratocaster guitare électrique sunburst bon état",
     "categorie": "instruments",
     "prix_affiche": 150,
     "prix_cible": 130,
@@ -45,7 +45,7 @@
   },
   {
     "id": "5",
-    "titre": "Zara abito a fiori boho tg. 38 EU nuovo con cartellino",
+    "titre": "Zara robe fleurie bohème femme T38 neuve avec étiquette",
     "categorie": "vetements_femme",
     "prix_affiche": 22,
     "prix_cible": 20,
@@ -56,7 +56,7 @@
   },
   {
     "id": "493f8368",
-    "titre": "U.S. Polo Assn. maglione scollo V grigio XL uomo ottime condizioni",
+    "titre": "Pull U.S. Polo Assn. homme col V gris XL très bon état",
     "categorie": "vetements_homme",
     "prix_affiche": 15,
     "prix_cible": 12,
@@ -67,7 +67,7 @@
   },
   {
     "id": "68443b5a",
-    "titre": "Cappotto donna rosso bordeaux svasato colletto tg. L ottime condizioni",
+    "titre": "Manteau femme rouge bordeaux évasé avec col taille L très bon état",
     "categorie": "vetements_femme",
     "prix_affiche": 25,
     "prix_cible": 20,
@@ -78,7 +78,7 @@
   },
   {
     "id": "d5b7c2c6",
-    "titre": "Maglione mezza zip Redmond blu navy uomo taglia L",
+    "titre": "Pull camionneur demi-zip Redmond bleu marine homme taille L",
     "categorie": "vetements_homme",
     "prix_affiche": 16,
     "prix_cible": 13,

@@ -1,16 +1,17 @@
 {
   "vetements_homme": {
     "mots_cles": [
-      "uomo",
+      "homme",
       "vintage",
       "streetwear",
       "casual",
       "slim",
       "oversize",
-      "regular fit",
-      "ricamato",
-      "tinta unita",
-      "a righe"
+      "coupe droite",
+      "brodé",
+      "imprimé",
+      "uni",
+      "rayé"
     ],
     "marques": [
       "Zara",
@@ -25,11 +26,11 @@
       "Supreme"
     ],
     "etats": [
-      "nuovo con cartellino",
-      "nuovo senza cartellino",
-      "ottime condizioni",
-      "buone condizioni",
-      "condizioni discrete"
+      "neuf avec étiquette",
+      "neuf sans étiquette",
+      "très bon état",
+      "bon état",
+      "état correct"
     ],
     "tailles": [
       "XS",
@@ -53,16 +54,17 @@
   },
   "vetements_femme": {
     "mots_cles": [
-      "donna",
-      "di tendenza",
-      "boho",
+      "femme",
+      "tendance",
+      "bohème",
       "chic",
       "casual",
-      "elegante",
-      "floreale",
+      "soirée",
+      "floral",
+      "uni",
       "oversize",
-      "vita alta",
-      "sostenibile"
+      "taille haute",
+      "éco-responsable"
     ],
     "marques": [
       "Zara",
@@ -77,11 +79,11 @@
       "Pull&Bear"
     ],
     "etats": [
-      "nuovo con cartellino",
-      "nuovo senza cartellino",
-      "ottime condizioni",
-      "buone condizioni",
-      "condizioni discrete"
+      "neuf avec étiquette",
+      "neuf sans étiquette",
+      "très bon état",
+      "bon état",
+      "état correct"
     ],
     "tailles": [
       "XS",
@@ -104,14 +106,14 @@
   },
   "chaussures": {
     "mots_cles": [
-      "comode",
-      "leggere",
-      "impermeabili",
-      "suola alta",
-      "vera pelle",
-      "scamosciate",
-      "con lacci",
-      "senza lacci"
+      "confortables",
+      "légères",
+      "imperméables",
+      "semelle épaisse",
+      "cuir véritable",
+      "daim",
+      "lacets",
+      "sans lacets"
     ],
     "marques": [
       "Nike",
@@ -126,11 +128,11 @@
       "Reebok"
     ],
     "etats": [
-      "nuovo con cartellino",
-      "nuovo senza cartellino",
-      "ottime condizioni",
-      "buone condizioni",
-      "condizioni discrete"
+      "neuf avec boîte",
+      "neuf sans boîte",
+      "très bon état",
+      "bon état",
+      "état correct"
     ],
     "tailles": [
       "36",
@@ -149,18 +151,18 @@
       10,
       120
     ],
-    "title_formula": "{marque} {type} {couleur} {taille} {etat}"
+    "title_formula": "{marque} {type} {couleur} T{taille} {etat}"
   },
   "electronique": {
     "mots_cles": [
-      "funzionante",
-      "testato",
-      "sbloccato",
-      "batteria ok",
-      "senza graffi",
-      "ricondizionato",
-      "accessori inclusi",
-      "caricatore incluso"
+      "fonctionnel",
+      "testé",
+      "débloqué",
+      "batterie ok",
+      "sans rayure",
+      "reconditionné",
+      "accessoires inclus",
+      "chargeur fourni"
     ],
     "marques": [
       "Apple",
@@ -175,55 +177,54 @@
       "Nintendo"
     ],
     "etats": [
-      "nuovo con cartellino",
-      "nuovo senza cartellino",
-      "ottime condizioni",
-      "buone condizioni",
-      "condizioni discrete"
+      "neuf sous blister",
+      "reconditionné",
+      "très bon état",
+      "bon état",
+      "état correct"
     ],
     "prix_fourchette": [
       20,
       500
     ],
-    "title_formula": "{marque} {modele} {stockage} — {etat} {accessoires}"
+    "title_formula": "{marque} {modele} {stockage} {etat} {accessoires}"
   },
   "livres": {
     "mots_cles": [
-      "romanzo",
-      "fumetto",
+      "roman",
+      "BD",
       "manga",
-      "biografia",
-      "crescita personale",
+      "biographie",
+      "développement personnel",
       "thriller",
-      "fantascienza",
-      "ragazzi",
-      "classico"
+      "science-fiction",
+      "jeunesse",
+      "classique"
     ],
     "etats": [
-      "nuovo con cartellino",
-      "nuovo senza cartellino",
-      "ottime condizioni",
-      "buone condizioni",
-      "condizioni discrete"
+      "neuf",
+      "très bon état",
+      "bon état",
+      "état correct"
     ],
     "prix_fourchette": [
       1,
       15
     ],
-    "title_formula": "{titre} — {auteur} ({genre}) {etat}"
+    "title_formula": "{titre} {auteur} ({genre}) {etat}"
   },
   "jeux_video": {
     "mots_cles": [
-      "completo",
-      "custodia inclusa",
-      "manuale",
-      "multiplayer",
-      "single player",
+      "complet",
+      "boîte incluse",
+      "notice",
+      "multi",
+      "solo",
       "RPG",
       "FPS",
-      "avventura",
+      "aventure",
       "sport",
-      "corse"
+      "course"
     ],
     "marques": [
       "PlayStation",
@@ -237,29 +238,28 @@
       "Xbox Series"
     ],
     "etats": [
-      "nuovo con cartellino",
-      "nuovo senza cartellino",
-      "ottime condizioni",
-      "buone condizioni",
-      "condizioni discrete"
+      "neuf sous blister",
+      "très bon état",
+      "bon état",
+      "état correct"
     ],
     "prix_fourchette": [
       5,
       60
     ],
-    "title_formula": "{titre} {console} — {etat} {details}"
+    "title_formula": "{titre} {console} {etat} {details}"
   },
   "instruments": {
     "mots_cles": [
-      "principiante",
-      "intermedio",
-      "professionale",
-      "acustica",
-      "elettrica",
-      "ampli incluso",
-      "custodia inclusa",
-      "accordata",
-      "revisionata"
+      "débutant",
+      "intermédiaire",
+      "professionnel",
+      "acoustique",
+      "électrique",
+      "ampli inclus",
+      "housse incluse",
+      "accordé",
+      "révisé"
     ],
     "marques": [
       "Fender",
@@ -273,16 +273,15 @@
       "Stagg"
     ],
     "etats": [
-      "nuovo con cartellino",
-      "nuovo senza cartellino",
-      "ottime condizioni",
-      "buone condizioni",
-      "condizioni discrete"
+      "neuf",
+      "très bon état",
+      "bon état",
+      "état correct"
     ],
     "prix_fourchette": [
       30,
       800
     ],
-    "title_formula": "{marque} {type} {modele} — {etat} {accessoires}"
+    "title_formula": "{marque} {type} {modele} {etat} {accessoires}"
   }
 }

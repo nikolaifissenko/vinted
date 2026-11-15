@@ -20,13 +20,13 @@
       </div>
     </div>
     <div class="form-group">
-      <label>Description courte de l'article <span class="text-muted">(en italien — elle va dans le titre)</span></label>
-      <textarea name="description" placeholder="es: maglione scollo V, jeans slim blu slavato, sneakers basse…" required>{{ form.get('description', '') }}</textarea>
+      <label>Description courte de l'article <span class="text-muted">(elle va dans le titre)</span></label>
+      <textarea name="description" placeholder="ex : pull col V, jean slim bleu délavé, baskets basses…" required>{{ form.get('description', '') }}</textarea>
     </div>
     <div class="form-row-3">
       <div class="form-group">
         <label>Couleur / Matière</label>
-        <input type="text" name="couleur" placeholder="es: grigio, pelle nera…" value="{{ form.get('couleur', '') }}">
+        <input type="text" name="couleur" placeholder="ex : gris, cuir noir…" value="{{ form.get('couleur', '') }}">
       </div>
       <div class="form-group">
         <label>Taille / Pointure</label>
@@ -35,8 +35,8 @@
       <div class="form-group">
         <label>État</label>
         <select name="etat">
-          {% for e in ['nuovo con cartellino', 'nuovo senza cartellino', 'ottime condizioni', 'buone condizioni', 'condizioni discrete'] %}
-          <option value="{{ e }}" {% if form.get('etat', 'ottime condizioni') == e %}selected{% endif %}>{{ e|capitalize }}</option>
+          {% for e in ['neuf avec étiquette', 'neuf sans étiquette', 'très bon état', 'bon état', 'état correct'] %}
+          <option value="{{ e }}" {% if form.get('etat', 'très bon état') == e %}selected{% endif %}>{{ e|capitalize }}</option>
           {% endfor %}
         </select>
       </div>
