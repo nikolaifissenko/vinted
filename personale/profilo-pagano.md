@@ -178,7 +178,39 @@ Minimal, balanced, iconic, high contrast. Also provide a version in pure
 black on white for the tattoo stencil.
 ```
 
-### Variante minimalista e moderna
+### Variante minimalista virile (versione scelta)
+
+```
+Design a bold, minimalist, modern tattoo inspired by ancient Greek art.
+Strong confident black linework, medium-weight lines (not fine-line),
+solid black fills where useful, flat and graphic, high contrast, generous
+negative space. Masculine, austere, warrior aesthetic. No flowers,
+no delicate ornaments, no curls. Size about 10-12 cm, vertical.
+
+Main element: the head of Odysseus in strict profile, wearing a Corinthian
+helmet (closed cheek-guards, narrow eye slit, nose guard, tall horsehair
+crest drawn as a solid black arc). Short strong beard visible under the
+cheek-guard. Geometric, sculptural, calm and watchful — not angry.
+
+Below the helmet, small and integrated: a Greek ship with one square sail,
+in a few hard lines, on a single stylized wave line. The mast is a caduceus
+(straight staff, two snakes as one continuous line, small wings at the top).
+
+Under the hull, a few strong angular olive roots reaching downward, with
+two or three sharp olive leaves — rooted, not anchored.
+
+Above the crest, a small eight-pointed star with a short comet tail
+(Sidus Iulium), solid black.
+
+Optional: a thick Greek meander band as a horizontal base line.
+Optional inscription in sharp Greek capitals: ΣΠΕΥΔΕ ΒΡΑΔΕΩΣ.
+
+References: black-figure vase silhouettes, Greek coin profiles,
+modern blackwork tattoo. Provide 3 variations: helmet only with star,
+helmet + ship, full composition with meander base.
+```
+
+### Variante minimalista fine-line (scartata: troppo delicata)
 
 ```
 Design a minimalist, modern fine-line tattoo inspired by ancient Greek art.
